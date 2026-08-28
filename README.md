@@ -312,3 +312,4 @@ The final audit added several correctness safeguards:
 ## Future Improvements
 
 Possible extensions include course portfolios across multiple subjects, GPA/CGPA integration, optional cloud synchronization, richer charting, import from LMS exports, institution-specific reusable templates, and automated unit-test coverage for more boundary cases.
+
