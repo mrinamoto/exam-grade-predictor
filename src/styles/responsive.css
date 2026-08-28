@@ -1,0 +1,84 @@
+@media (max-width: 1120px) {
+  .metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .scenario-grid { grid-template-columns: repeat(2, 1fr); }
+  .settings-grid { grid-template-columns: 1fr; }
+  .grade-preset-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .topbar { padding-inline: 20px; }
+  .brand-subtitle { display: none; }
+  .header-actions .button { display: none; }
+  .app-main { width: min(100% - 32px, 1360px); padding-top: 28px; }
+  .intro-grid, .planning-grid, .analytics-grid { grid-template-columns: 1fr; }
+  .intro-copy { padding: 18px 2px 4px; }
+  .hero-result-card { min-height: 250px; }
+  .course-grid { grid-template-columns: 1fr 1fr; }
+  .course-grid .field-block:first-child { grid-column: 1 / -1; }
+  .simulator-row { grid-template-columns: 1fr 1fr 110px; }
+  .simulator-label { grid-column: 1 / -1; }
+  .scenario-grid { grid-template-columns: 1fr 1fr; }
+  .comparison-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .app-main { width: min(100% - 24px, 1360px); }
+  .panel { padding: 19px; border-radius: 17px; }
+  .section-heading.split { flex-direction: column; align-items: stretch; }
+  .intro-copy h1 { font-size: clamp(36px, 12vw, 54px); }
+  .intro-copy p { font-size: 15px; }
+  .metric-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .metric-card { min-height: 140px; padding: 16px; }
+  .metric-card strong { font-size: 25px; }
+  .course-grid { grid-template-columns: 1fr; }
+  .course-grid .field-block:first-child { grid-column: auto; }
+  .desktop-assessment-table { display: none; }
+  .mobile-assessment-list { display: grid; gap: 12px; }
+  .assessment-card-mobile { padding: 15px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface-2); }
+  .mobile-card-title { display: flex; align-items: center; gap: 8px; margin-bottom: 13px; }
+  .mobile-card-title input { font-size: 15px; font-weight: 780; }
+  .mobile-input-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .mobile-input-grid label { color: var(--muted); font-size: 10px; font-weight: 700; }
+  .mobile-input-grid input, .mobile-input-grid select { margin-top: 5px; }
+  .mobile-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+  .mobile-metrics span { display: flex; flex-direction: column; gap: 3px; padding: 10px; border-radius: 11px; background: var(--surface); }
+  .mobile-metrics small { color: var(--muted); font-size: 9px; }
+  .simulator-row { grid-template-columns: 1fr 95px; gap: 12px; }
+  .simulator-label { grid-column: 1 / -1; }
+  .preset-row { grid-column: 1 / -1; }
+  .contribution-row { grid-template-columns: 1fr 55px; }
+  .contribution-track { grid-column: 1 / -1; grid-row: 2; }
+  .contribution-value { grid-column: 2; grid-row: 1; }
+  .scenario-grid { grid-template-columns: 1fr; }
+  .grade-preset-grid { grid-template-columns: repeat(3, 1fr); }
+  .app-footer { flex-direction: column; }
+}
+
+@media (max-width: 460px) {
+  .topbar { min-height: 64px; padding-inline: 14px; }
+  .brand-mark { width: 38px; height: 38px; }
+  .brand-title { font-size: 13px; }
+  .header-actions { gap: 6px; }
+  .icon-button { width: 38px; height: 38px; }
+  .app-main { width: calc(100% - 18px); padding-top: 20px; }
+  .intro-grid { gap: 12px; }
+  .intro-copy { padding-inline: 5px; }
+  .intro-copy h1 { margin-top: 8px; font-size: 38px; }
+  .intro-actions { flex-wrap: wrap; }
+  .hero-result-card { padding: 24px; border-radius: 21px; }
+  .hero-result-card > strong { font-size: 52px; }
+  .metric-grid { grid-template-columns: 1fr; }
+  .metric-card { min-height: 125px; }
+  .mobile-input-grid { grid-template-columns: 1fr; }
+  .grade-preset-grid { grid-template-columns: repeat(2, 1fr); }
+  .simulator-row { grid-template-columns: 1fr; }
+  .slider-wrap, .percent-input { grid-column: 1; }
+  .scenario-metrics { grid-template-columns: 1fr; }
+  .section-heading h2 { font-size: 20px; }
+  .row-actions { flex-wrap: wrap; }
+  .row-actions .button { width: 100%; }
+  .grade-editor-row { grid-template-columns: 1fr 105px 38px; }
+  .modal-backdrop { padding: 10px; }
+  .modal-panel { max-height: calc(100vh - 20px); border-radius: 18px; }
+  .modal-head, .modal-body { padding: 16px; }
+}
